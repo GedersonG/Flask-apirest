@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Update Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="/update/{{ user.0 }}" method="POST">
+            <input type="text" name="fullname" placeholder="Fullname" value="{{ user.1 }}">
+            <input type="number" name="phone" placeholder="Phone" value="{{ user.2 }}">
+            <input type="email" name="email" placeholder="Email" value="{{ user.3 }}">
+            <button type="submit">
+                Update
+            </button>
+        </form>
+    </body>
+</html>
